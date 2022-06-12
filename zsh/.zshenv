@@ -4,6 +4,7 @@ export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:="$HOME/.config"}
 
 export HISTFILE="$XDG_DATA_HOME"/zsh/history
 export LESSHISTFILE=-
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 
 export EDITOR="nvim"
 export TERMINAL="alacritty"

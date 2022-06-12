@@ -1,6 +1,9 @@
 # Enable colors
 autoload -U colors && colors
 
+setopt autocd		# Automatically cd into typed directory.
+stty stop undef		# Disable ctrl-s to freeze terminal.
+
 # History in cache directory
 HISTSIZE=10000
 SAVEHIST=10000
@@ -11,6 +14,7 @@ alias ls="exa --all --long --icons --group-directories-first"
 # Basic auto/tab complete
 autoload -U compinit
 zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 zmodload zsh/complist
 compinit -d "$XDG_CACHE_HOME"/zsh/compdump
 _comp_options+=(globdots) # Include hidden files.
