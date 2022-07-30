@@ -10,5 +10,5 @@ export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="brave"
 
-path=("$HOME/.local/bin" $path)
+path=("$HOME/.local/bin" "$HOME/.cargo/bin" $path)
 export PATH

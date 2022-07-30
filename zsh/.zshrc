@@ -10,6 +10,8 @@ SAVEHIST=10000
 
 # Aliases
 alias ls="exa --all --long --icons --group-directories-first"
+alias v="nvim"
+alias rm="trash"
 
 # Basic auto/tab complete
 autoload -U compinit
@@ -51,3 +53,4 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # Start the starship prompt
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
